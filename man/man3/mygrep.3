@@ -1,0 +1,23 @@
+.TH MYGREP 3 "September 2026" "BSDSF24M059-OS-A01" "Library Functions"
+
+.SH NAME
+mygrep \- search for a string in a file
+
+.SH SYNOPSIS
+.B #include <stdio.h>
+.br
+.B int mygrep(FILE* file, const char* search_str, char*** matches);
+
+.SH DESCRIPTION
+.B mygrep
+searches the specified file stream for lines containing
+.I search_str
+.
+
+Matching lines are stored in the
+.I matches
+array. The function returns the number of matching lines and returns
+-1 on failure.
+
+.SH AUTHOR
+Akmal
